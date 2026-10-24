@@ -1,8 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import { fileURLToPath, URL } from 'node:url'
-import { VitePWA } from 'vite-plugin-pwa'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+import { VitePWA } from 'vite-plugin-pwa';
 import path from 'path';
 
 export default defineConfig({
@@ -27,11 +26,11 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@data': path.resolve(__dirname, './src/data'),
-      '@components': path.resolve(__dirname, './src/components'),
-      '@utils': path.resolve(__dirname, './src/utils'),
-      '@hooks': path.resolve(__dirname, './src/hooks')
+      '@': path.resolve(import.meta.dirname, './src'),
+      '@data': path.resolve(import.meta.dirname, './src/data'),
+      '@components': path.resolve(import.meta.dirname, './src/components'),
+      '@utils': path.resolve(import.meta.dirname, './src/utils'),
+      '@hooks': path.resolve(import.meta.dirname, './src/hooks')
     },
   },
-})
+});
