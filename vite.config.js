@@ -6,15 +6,15 @@ import { VitePWA } from 'vite-plugin-pwa'
 import path from 'path';
 
 export default defineConfig({
-  base: '/no-mans-cuisine/',
+  base: '/no-mans-foundry/',
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'no-mans-cuisine',
-        short_name: 'no-mans-cuisine',
+        name: 'No Man\'s Foundry',
+        short_name: 'no-mans-foundry',
         theme_color: '#0f172a',
         background_color: '#0f172a',
         display: 'standalone',
