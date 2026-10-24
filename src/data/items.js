@@ -1,0 +1,292 @@
+export const ITEMS = {
+    // --- TIER 1: BIODOME CROPS (With Growth Hours, Yield per 16-Slot Dome, & 1:1 Refiner Doubler Mineral) ---
+    frost_crystal: {
+        id: 'frost_crystal',
+        name: 'Frost Crystal',
+        plantName: 'Frostwort',
+        tier: 1,
+        order: 1,
+        stackCap: 9999,
+        isCrop: true,
+        growthHours: 1,
+        yieldPerDome: 800, // 16 plants * 50 base yield
+        doublerMineral: 'dioxite',
+        source: 'Biodome (Frostwort - 1h)'
+    },
+    cactus_flesh: {
+        id: 'cactus_flesh',
+        name: 'Cactus Flesh',
+        plantName: 'Echinocactus',
+        tier: 1,
+        order: 2,
+        stackCap: 9999,
+        isCrop: true,
+        growthHours: 16,
+        yieldPerDome: 1600, // 16 plants * 100 base yield
+        doublerMineral: 'pyrite',
+        source: 'Biodome (Echinocactus - 16h)'
+    },
+    gamma_root: {
+        id: 'gamma_root',
+        name: 'Gamma Root',
+        plantName: 'Gamma Weed',
+        tier: 1,
+        order: 3,
+        stackCap: 9999,
+        isCrop: true,
+        growthHours: 4,
+        yieldPerDome: 800,
+        doublerMineral: 'uranium',
+        source: 'Biodome (Gamma Weed - 4h)'
+    },
+    star_bulb: {
+        id: 'star_bulb',
+        name: 'Star Bulb',
+        plantName: 'Star Bramble',
+        tier: 1,
+        order: 4,
+        stackCap: 9999,
+        isCrop: true,
+        growthHours: 4,
+        yieldPerDome: 400, // 16 plants * 25 base yield
+        doublerMineral: 'paraffinium',
+        source: 'Biodome (Star Bramble - 4h)'
+    },
+    solanium: {
+        id: 'solanium',
+        name: 'Solanium',
+        plantName: 'Solar Vine',
+        tier: 1,
+        order: 5,
+        stackCap: 9999,
+        isCrop: true,
+        growthHours: 16,
+        yieldPerDome: 800,
+        doublerMineral: 'phosphorus',
+        source: 'Biodome (Solar Vine - 16h)'
+    },
+    fungal_mould: {
+        id: 'fungal_mould',
+        name: 'Fungal Mould',
+        plantName: 'Fungal Cluster',
+        tier: 1,
+        order: 6,
+        stackCap: 9999,
+        isCrop: true,
+        growthHours: 4,
+        yieldPerDome: 800,
+        doublerMineral: 'ammonia',
+        source: 'Biodome (Fungal Cluster - 4h)'
+    },
+    faecium: {
+        id: 'faecium',
+        name: 'Faecium',
+        plantName: 'Gutrot Flower',
+        tier: 1,
+        order: 7,
+        stackCap: 9999,
+        isCrop: true,
+        growthHours: 4,
+        yieldPerDome: 400,
+        doublerMineral: 'oxygen',
+        source: 'Biodome (Gutrot - 4h)'
+    },
+    mordite: {
+        id: 'mordite',
+        name: 'Mordite',
+        plantName: 'Mordite Root',
+        tier: 1,
+        order: 8,
+        stackCap: 9999,
+        isCrop: true,
+        growthHours: 8,
+        yieldPerDome: 400,
+        doublerMineral: null,
+        source: 'Biodome (Mordite Root - 8h)'
+    },
+
+    // --- TIER 1: RANCH & FORAGED INPUTS ---
+    fresh_milk: { id: 'fresh_milk', name: 'Fresh / Wild Milk', tier: 1, order: 9, stackCap: 50, isRanch: true, source: 'Livestock Unit (Mammals)' },
+    proto_milk: { id: 'proto_milk', name: 'Warm Proto-Milk', tier: 1, order: 10, stackCap: 50, isRanch: true, source: 'Livestock Unit (Proto-Gek)' },
+    creature_egg: { id: 'creature_egg', name: 'Creature Egg', tier: 1, order: 11, stackCap: 50, isRanch: true, source: 'Livestock Unit (Egg-Layers)' },
+    sticky_honey: { id: 'sticky_honey', name: "Sticky 'Honey'", tier: 1, order: 12, stackCap: 50, isRanch: true, source: 'Livestock (Blobs) / Synthetic' },
+    hexaberry: { id: 'hexaberry', name: 'Hexaberry', tier: 1, order: 13, stackCap: 50, source: 'Foraged (Exotic Planets)' },
+    larval_core: { id: 'larval_core', name: 'Larval Core', tier: 1, order: 14, stackCap: 50, source: 'Whispering Eggs' },
+    chromatic_metal: { id: 'chromatic_metal', name: 'Chromatic Metal', tier: 1, order: 15, stackCap: 9999, source: 'Refiner (Stellar Metals)' },
+
+    // --- TIER 1: GASES & MINERALS ---
+    sulphurine: { id: 'sulphurine', name: 'Sulphurine', tier: 1, order: 16, stackCap: 9999, isGas: true, source: 'Gas Extractor (Scorched/Desert)' },
+    nitrogen: { id: 'nitrogen', name: 'Nitrogen', tier: 1, order: 17, stackCap: 9999, isGas: true, source: 'Gas Extractor (Lush/Toxic)' },
+    radon: { id: 'radon', name: 'Radon', tier: 1, order: 18, stackCap: 9999, isGas: true, source: 'Gas Extractor (Frozen/Radioactive)' },
+    condensed_carbon: { id: 'condensed_carbon', name: 'Condensed Carbon', tier: 1, order: 19, stackCap: 9999, isGas: true, source: 'Refiner (Carbon + Oxygen Loop)' },
+    paraffinium: { id: 'paraffinium', name: 'Paraffinium', tier: 1, order: 20, stackCap: 9999, source: 'Mineral Extractor (Lush)' },
+    phosphorus: { id: 'phosphorus', name: 'Phosphorus', tier: 1, order: 21, stackCap: 9999, source: 'Mineral Extractor (Scorched)' },
+    dioxite: { id: 'dioxite', name: 'Dioxite', tier: 1, order: 22, stackCap: 9999, source: 'Mineral Extractor (Frozen)' },
+    pyrite: { id: 'pyrite', name: 'Pyrite', tier: 1, order: 23, stackCap: 9999, source: 'Mineral Extractor (Desert)' },
+    uranium: { id: 'uranium', name: 'Uranium', tier: 1, order: 24, stackCap: 9999, source: 'Mineral Extractor (Irradiated)' },
+    ammonia: { id: 'ammonia', name: 'Ammonia', tier: 1, order: 25, stackCap: 9999, source: 'Mineral Extractor (Toxic)' },
+    pure_ferrite: { id: 'pure_ferrite', name: 'Pure Ferrite', tier: 1, order: 26, stackCap: 9999, source: 'Mineral Extractor / Refiner' },
+    ionised_cobalt: { id: 'ionised_cobalt', name: 'Ionised Cobalt', tier: 1, order: 27, stackCap: 9999, source: 'Refiner (Cobalt + Oxygen)' },
+
+    // --- TIER 2: BAKING PROCESSED STAPLES ---
+    glass_grains: { id: 'glass_grains', name: 'Glass Grains', tier: 2, order: 1, stackCap: 50 },
+    refined_flour: { id: 'refined_flour', name: 'Refined Flour', tier: 2, order: 2, stackCap: 50 },
+    wild_yeast: { id: 'wild_yeast', name: 'Wild Yeast', tier: 2, order: 3, stackCap: 50 },
+    dough: { id: 'dough', name: 'Dough', tier: 2, order: 4, stackCap: 50 },
+    cactus_nectar: { id: 'cactus_nectar', name: 'Cactus Nectar', tier: 2, order: 5, stackCap: 50 },
+    processed_sugar: { id: 'processed_sugar', name: 'Processed Sugar', tier: 2, order: 6, stackCap: 50 },
+    cream: { id: 'cream', name: 'Cream', tier: 2, order: 7, stackCap: 50 },
+    churned_butter: { id: 'churned_butter', name: 'Churned Butter', tier: 2, order: 8, stackCap: 50 },
+    clarified_oil: { id: 'clarified_oil', name: 'Clarified Oil', tier: 2, order: 9, stackCap: 50 },
+    sweetened_butter: { id: 'sweetened_butter', name: 'Sweetened Butter', tier: 2, order: 10, stackCap: 50 },
+    delicate_meringue: { id: 'delicate_meringue', name: 'Delicate Meringue', tier: 2, order: 11, stackCap: 50 },
+    silicon_egg: { id: 'silicon_egg', name: 'Silicon Egg', tier: 2, order: 12, stackCap: 50 },
+    proto_cream: { id: 'proto_cream', name: 'Proto-Cream', tier: 2, order: 13, stackCap: 50 },
+    proto_butter: { id: 'proto_butter', name: 'Proto-Butter', tier: 2, order: 14, stackCap: 50 },
+    sweetened_proto_butter: { id: 'sweetened_proto_butter', name: 'Sweetened Proto-Butter', tier: 2, order: 15, stackCap: 50 },
+
+    // --- TIER 2: INDUSTRIAL INTERMEDIATES ---
+    glass: { id: 'glass', name: 'Glass', tier: 2, order: 20, stackCap: 40 },
+    lubricant: { id: 'lubricant', name: 'Lubricant', tier: 2, order: 21, stackCap: 20 },
+    poly_fibre: { id: 'poly_fibre', name: 'Poly Fibre', tier: 2, order: 22, stackCap: 20 },
+    heat_capacitor: { id: 'heat_capacitor', name: 'Heat Capacitor', tier: 2, order: 23, stackCap: 20 },
+    acid: { id: 'acid', name: 'Acid', tier: 2, order: 24, stackCap: 20 },
+    unstable_gel: { id: 'unstable_gel', name: 'Unstable Gel', tier: 2, order: 25, stackCap: 20 },
+    thermic_condensate: { id: 'thermic_condensate', name: 'Thermic Condensate', tier: 2, order: 26, stackCap: 20 },
+    nitrogen_salt: { id: 'nitrogen_salt', name: 'Nitrogen Salt', tier: 2, order: 27, stackCap: 20 },
+    enriched_carbon: { id: 'enriched_carbon', name: 'Enriched Carbon', tier: 2, order: 28, stackCap: 20 },
+    aronium: { id: 'aronium', name: 'Aronium', tier: 2, order: 29, stackCap: 20 },
+    magno_gold: { id: 'magno_gold', name: 'Magno-Gold', tier: 2, order: 30, stackCap: 20 },
+    grantine: { id: 'grantine', name: 'Grantine', tier: 2, order: 31, stackCap: 20 },
+    dirty_bronze: { id: 'dirty_bronze', name: 'Dirty Bronze', tier: 2, order: 32, stackCap: 20 },
+    lemmium: { id: 'lemmium', name: 'Lemmium', tier: 2, order: 33, stackCap: 20 },
+    herox: { id: 'herox', name: 'Herox', tier: 2, order: 34, stackCap: 20 },
+
+    // --- TIER 3: BAKING DOUGHS, BATTERS & FILLINGS ---
+    lumpen_doughnut: { id: 'lumpen_doughnut', name: 'Lumpen Doughnut', tier: 3, order: 1, stackCap: 50 },
+    cake_batter: { id: 'cake_batter', name: 'Cake Batter', tier: 3, order: 2, stackCap: 50 },
+    extra_fluffy_batter: { id: 'extra_fluffy_batter', name: 'Extra-Fluffy Batter', tier: 3, order: 3, stackCap: 50 },
+    proto_batter: { id: 'proto_batter', name: 'Proto-Batter', tier: 3, order: 4, stackCap: 50 },
+    writhing_batter: { id: 'writhing_batter', name: 'Writhing, Roiling Batter', tier: 3, order: 5, stackCap: 50 },
+    stellar_custard: { id: 'stellar_custard', name: 'Stellar Custard', tier: 3, order: 6, stackCap: 50 },
+    anomalous_jam: { id: 'anomalous_jam', name: 'Anomalous Jam', tier: 3, order: 7, stackCap: 50 },
+    monstrous_custard: { id: 'monstrous_custard', name: 'Monstrous Custard', tier: 3, order: 8, stackCap: 50 },
+
+    // --- TIER 3: INDUSTRIAL SUB-ASSEMBLIES ---
+    living_glass: { id: 'living_glass', name: 'Living Glass', tier: 3, order: 20, stackCap: 20 },
+    hot_ice: { id: 'hot_ice', name: 'Hot Ice', tier: 3, order: 21, stackCap: 20 },
+    cryo_pump: { id: 'cryo_pump', name: 'Cryo-Pump', tier: 3, order: 22, stackCap: 20 },
+    cryogenic_chamber: { id: 'cryogenic_chamber', name: 'Cryogenic Chamber', tier: 3, order: 23, stackCap: 20 },
+    liquid_explosive: { id: 'liquid_explosive', name: 'Liquid Explosive', tier: 3, order: 24, stackCap: 20 },
+    organic_catalyst: { id: 'organic_catalyst', name: 'Organic Catalyst', tier: 3, order: 25, stackCap: 20 },
+    fusion_accelerant: { id: 'fusion_accelerant', name: 'Fusion Accelerant', tier: 3, order: 26, stackCap: 20 },
+    portable_reactor: { id: 'portable_reactor', name: 'Portable Reactor', tier: 3, order: 27, stackCap: 20 },
+    circuit_board: { id: 'circuit_board', name: 'Circuit Board', tier: 3, order: 28, stackCap: 20 },
+    semiconductor: { id: 'semiconductor', name: 'Semiconductor', tier: 3, order: 29, stackCap: 20 },
+    superconductor: { id: 'superconductor', name: 'Superconductor', tier: 3, order: 30, stackCap: 20 },
+    quantum_processor: { id: 'quantum_processor', name: 'Quantum Processor', tier: 3, order: 31, stackCap: 20 },
+    iridesite: { id: 'iridesite', name: 'Iridesite', tier: 3, order: 32, stackCap: 20 },
+    geodesite: { id: 'geodesite', name: 'Geodesite', tier: 3, order: 33, stackCap: 20 },
+
+    // --- TIER 4: FINAL OUTPUTS ---
+    the_stellarator: {
+        id: 'the_stellarator',
+        name: 'The Stellarator',
+        category: 'baking',
+        tier: 4,
+        order: 1,
+        stackCap: 50,
+        unitValue: 110000,
+        buff: '+64% Resources Mined'
+    },
+    anomalous_doughnut: {
+        id: 'anomalous_doughnut',
+        name: 'Anomalous Doughnut',
+        category: 'baking',
+        tier: 4,
+        order: 2,
+        stackCap: 50,
+        unitValue: 70000,
+        buff: '+6,443% Fauna Analysis'
+    },
+    extra_fluffy_cream_cake: {
+        id: 'extra_fluffy_cream_cake',
+        name: 'Extra-Fluffy Cream Cake',
+        category: 'baking',
+        tier: 4,
+        order: 3,
+        stackCap: 50,
+        unitValue: 23600,
+        buff: '+6,422% Fauna Analysis'
+    },
+    questionably_sweet_cake: {
+        id: 'questionably_sweet_cake',
+        name: 'Questionably Sweet Cake',
+        category: 'baking',
+        tier: 4,
+        order: 4,
+        stackCap: 50,
+        unitValue: 92300,
+        buff: '+64% Resources Mined'
+    },
+    most_curious_cake: {
+        id: 'most_curious_cake',
+        name: 'Most Curious Cake',
+        category: 'baking',
+        tier: 4,
+        order: 5,
+        stackCap: 50,
+        unitValue: 102000,
+        buff: '+6,469% Fauna Analysis'
+    },
+    perpetual_cake: {
+        id: 'perpetual_cake',
+        name: 'Perpetual Cake',
+        category: 'baking',
+        tier: 4,
+        order: 6,
+        stackCap: 50,
+        unitValue: 105000,
+        buff: '+329% Jetpack Tank Capacity'
+    },
+    cake_of_the_lost: {
+        id: 'cake_of_the_lost',
+        name: 'Cake of the Lost',
+        category: 'baking',
+        tier: 4,
+        order: 7,
+        stackCap: 50,
+        unitValue: 199200,
+        buff: '+6,059% Fauna Analysis'
+    },
+    monstrous_doughnut: {
+        id: 'monstrous_doughnut',
+        name: 'Monstrous Doughnut',
+        category: 'baking',
+        tier: 4,
+        order: 8,
+        stackCap: 50,
+        unitValue: 180000,
+        buff: '+6,000%+ Fauna Analysis'
+    },
+    stasis_device: {
+        id: 'stasis_device',
+        name: 'Stasis Device',
+        category: 'industrial',
+        tier: 4,
+        order: 9,
+        stackCap: 20,
+        unitValue: 15600000,
+        buff: '15.6M Units High-Tech Trade Good'
+    },
+    fusion_ignitor: {
+        id: 'fusion_ignitor',
+        name: 'Fusion Ignitor',
+        category: 'industrial',
+        tier: 4,
+        order: 10,
+        stackCap: 20,
+        unitValue: 15600000,
+        buff: '15.6M Units High-Tech Trade Good'
+    }
+};

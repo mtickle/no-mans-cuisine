@@ -1,0 +1,1 @@
+export const INDUSTRIAL_ITEMS = ['stasis_device', 'fusion_ignitor'];
