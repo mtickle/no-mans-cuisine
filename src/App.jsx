@@ -336,6 +336,7 @@ export default function App() {
         const endY = tRect.top - cRect.top + tRect.height / 2 + container.scrollTop;
         const ctrlOffset = Math.max(28, (endX - startX) * 0.5);
 
+        // Fixed string template literal with proper operator
         d = `M ${startX} ${startY} C ${startX + ctrlOffset} ${startY}, ${endX - ctrlOffset} ${endY}, ${endX} ${endY}`;
       } else {
         const isAdjacentBelow = Math.abs(tRect.top - fRect.bottom) < 36;
